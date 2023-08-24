@@ -1,8 +1,6 @@
 import { mount } from "@vue/test-utils";
 import InvoiceTable from "@/components/InvoiceTable.vue";
 import { describe, it, expect, beforeEach } from "vitest";
-import jest from "jest-mock";
-import flushPromises from "flush-promises";
 import { createPinia, setActivePinia } from "pinia";
 
 describe("InvoiceTable", () => {

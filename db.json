@@ -8,7 +8,7 @@
       "invoiceDue": "2023-08-01T19:00:36.429Z",
       "items": [
         {
-          "description": "Love",
+          "description": "Chip",
           "amount": 10000
         }
       ],
@@ -25,13 +25,13 @@
       "invoiceDue": "2023-08-24T19:45:07.916Z",
       "items": [
         {
-          "description": "Hate",
+          "description": "Adobe Acrobat",
           "amount": 10000
         }
       ],
       "itemDescription": "",
       "itemAmount": 0,
-      "notes": "Testing",
+      "notes": "Needs to be paid immediately",
       "id": 14
     },
     {
@@ -42,13 +42,13 @@
       "invoiceDue": "2023-08-23T19:55:57.302Z",
       "items": [
         {
-          "description": "Stuff",
+          "description": "iPhone",
           "amount": 1000
         }
       ],
       "itemDescription": "",
       "itemAmount": 0,
-      "notes": "Stuff",
+      "notes": "For CEO",
       "id": 15
     },
     {
@@ -106,22 +106,5 @@
       "notes": "Discount if paid early",
       "id": 18
     }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
