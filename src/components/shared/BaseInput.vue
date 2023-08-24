@@ -1,5 +1,5 @@
 <template>
-    <div class="input-container">
+  <div class="input-container">
     <label :for="id">{{ labelText }}</label>
     <input
       :value="modelValue"
@@ -7,20 +7,25 @@
       :id="id"
       :placeholder="placeHolder"
       :type="type"
+      :readonly="readonly"
     />
-    </div>
-  </template>
-  
-  <script lang="ts">
-  export default {
-    props: {
-      labelText: {
+  </div>
+</template>
+
+<script lang="ts">
+export default {
+  props: {
+    labelText: {
       type: String,
-      required: true,
+      required: false,
     },
     modelValue: {
-      type: String,
+      type: [String, Number],
       required: true,
+    },
+    readonly: {
+      type: Boolean,
+      default: false,
     },
     id: {
       type: String,
@@ -33,22 +38,42 @@
       type: String,
       default: "text",
     },
-    },
-  };
-  </script>
+  },
+};
+</script>
 
 <style scoped>
-  label {
-    color: #2C4E7D;
-    font-weight: 550;
-  }
+label {
+  color: #2c4e7d;
+  font-weight: 550;
+  font-size: 12px;
+}
 
-  .input-container {
-    margin-bottom: 0.9em;
-  }
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 4px;
+}
 
-  ::placeholder {
-    color: #818181;
-  }
+input {
+  padding: 4px 12px;
+  font-size: 0.9em;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  color: #818181;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-container label {
+  margin-bottom: 0px;
+}
+::placeholder {
+  color: #818181;
+}
 </style>
-

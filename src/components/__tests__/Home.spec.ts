@@ -1,26 +1,28 @@
-import { describe, it, expect, beforeEach } from 'vitest'
-import { createPinia, setActivePinia, storeToRefs } from 'pinia'
-import { mount } from '@vue/test-utils'
-// @ts-ignore
-import  Home from "../../views/Home.vue"
+import Header from "../Header.vue";
+import Home from "@/views/Home.vue";
+import { describe, it, expect } from "vitest";
+import InvoiceTable from "../InvoiceTable.vue";
+import { shallowMount } from "@vue/test-utils";
+import InvoiceDetailsForm from "@/components/InvoiceDetailsForm.vue";
 
-describe('HomeView', () => {
-  beforeEach(() => {
-    setActivePinia(createPinia())
-  })
-  it('renders properly', () => {
-    const wrapper = mount(Home)
-    expect(wrapper.text()).toContain('Loan Payment Calculator')
-    expect(wrapper.text()).toContain('Purchase Price')
-    expect(wrapper.text()).toContain('Interest Rate')
-    expect(wrapper.text()).toContain('Down Payment in $')
-    expect(wrapper.text()).toContain('Down Payment in %')
-    expect(wrapper.text()).toContain('Mortgage Term')
-    expect(wrapper.text()).toContain('Generate Rates')
-    expect(wrapper.text()).toContain('Mortgage Term')
-    expect(wrapper.text()).toContain('Monthly Payment')
-    expect(wrapper.text()).toContain('Interest Rate')
-    expect(wrapper.text()).toContain('Total Amount')
-    expect(wrapper.text()).toContain('Total over Loan Term')
-  })
-})
+describe("Home.vue", () => {
+  it("renders correctly", () => {
+    const wrapper = shallowMount(Home);
+    expect(wrapper.exists()).toBe(true);
+  });
+
+  it("contains Header component", () => {
+    const wrapper = shallowMount(Home);
+    expect(wrapper.findComponent(Header).exists()).toBe(true);
+  });
+
+  it("contains InvoiceDetailsForm component", () => {
+    const wrapper = shallowMount(Home);
+    expect(wrapper.findComponent(InvoiceDetailsForm).exists()).toBe(true);
+  });
+
+  it("contains InvoiceTable component", () => {
+    const wrapper = shallowMount(Home);
+    expect(wrapper.findComponent(InvoiceTable).exists()).toBe(true);
+  });
+});

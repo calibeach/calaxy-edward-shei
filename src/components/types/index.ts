@@ -1,7 +1,35 @@
-export type LoanCalculationsType = {
-    [key: string]: string,
-    mortgageTerm : string,
-    monthlyPayment : string,
-    totalAmount: string,
-    totalOverLoanTerm: string
+export type ItemsType = {
+  itemDescription: string;
+  amount: number;
+};
+
+export type InvoicesType = {
+  invoiceDetails: {
+    invoiceNumber: string;
+    recipient: string;
+    totalAmount: number;
+    invoiceCreated: Date;
+    invoiceDue: Date;
+    items: {
+      description: string;
+      amount: number;
+    }[];
+  };
+};
+
+export interface InvoiceDetails {
+  invoiceNumber: string;
+  recipient: string;
+  totalAmount: number;
+  invoiceCreated: Date;
+  invoiceDue: Date;
+  items: {
+    description: string;
+    amount: number;
+  }[];
+  itemDescription: string;
+  itemAmount: number;
+  notes: string;
 }
+
+

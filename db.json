@@ -1,0 +1,127 @@
+{
+  "invoices": [
+    {
+      "invoiceNumber": "230823-6309",
+      "recipient": "Intel",
+      "totalAmount": 10000,
+      "invoiceCreated": "2023-08-23T19:00:36.429Z",
+      "invoiceDue": "2023-08-01T19:00:36.429Z",
+      "items": [
+        {
+          "description": "Love",
+          "amount": 10000
+        }
+      ],
+      "itemDescription": "",
+      "itemAmount": 0,
+      "notes": "Trying",
+      "id": 13
+    },
+    {
+      "invoiceNumber": "230823-8531",
+      "recipient": "Adobe",
+      "totalAmount": 10000,
+      "invoiceCreated": "2023-08-23T19:45:07.916Z",
+      "invoiceDue": "2023-08-24T19:45:07.916Z",
+      "items": [
+        {
+          "description": "Hate",
+          "amount": 10000
+        }
+      ],
+      "itemDescription": "",
+      "itemAmount": 0,
+      "notes": "Testing",
+      "id": 14
+    },
+    {
+      "invoiceNumber": "230823-2546",
+      "recipient": "Apple",
+      "totalAmount": 1000,
+      "invoiceCreated": "2023-08-23T19:55:57.302Z",
+      "invoiceDue": "2023-08-23T19:55:57.302Z",
+      "items": [
+        {
+          "description": "Stuff",
+          "amount": 1000
+        }
+      ],
+      "itemDescription": "",
+      "itemAmount": 0,
+      "notes": "Stuff",
+      "id": 15
+    },
+    {
+      "invoiceNumber": "2232-528424",
+      "recipient": "Nvidia",
+      "totalAmount": 10000,
+      "invoiceCreated": "2023-08-23T20:39:43.977Z",
+      "invoiceDue": "2023-09-06T20:39:43.977Z",
+      "items": [
+        {
+          "description": "Ai Chips",
+          "amount": 10000
+        }
+      ],
+      "itemDescription": "",
+      "itemAmount": 0,
+      "notes": "Testing",
+      "id": 16
+    },
+    {
+      "invoiceNumber": "2989-4337-79",
+      "recipient": "Coca-cola",
+      "totalAmount": 12000,
+      "invoiceCreated": "2023-08-23T23:04:14.556Z",
+      "invoiceDue": "2023-08-24T23:04:14.556Z",
+      "items": [
+        {
+          "description": "Water",
+          "amount": 10000
+        },
+        {
+          "description": "Carbon",
+          "amount": 2000
+        }
+      ],
+      "itemDescription": "",
+      "itemAmount": 0,
+      "notes": "Stuff",
+      "id": 17
+    },
+    {
+      "invoiceNumber": "1739-1452-22",
+      "recipient": "Google",
+      "totalAmount": 10000,
+      "invoiceCreated": "2023-08-24T21:12:24.961Z",
+      "invoiceDue": "2023-08-01T21:12:24.961Z",
+      "items": [
+        {
+          "description": "Server Fees",
+          "amount": 10000
+        }
+      ],
+      "itemDescription": "",
+      "itemAmount": 0,
+      "notes": "Discount if paid early",
+      "id": 18
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

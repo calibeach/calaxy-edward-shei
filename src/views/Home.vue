@@ -2,36 +2,42 @@
   <div class="home">
     <Header />
     <div class="container">
-      <LoanDetailsForm />
-      <LoanCalculations />
+      <InvoiceDetailsForm />
+      <InvoiceTable />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-  import Header from "@/components/Header.vue";
-  import LoanDetailsForm from "@/components/LoanDetailsForm.vue";
-  import LoanCalculations from "@/components/LoanCalculations.vue";
+import Header from "@/components/Header.vue";
+import InvoiceDetailsForm from "@/components/InvoiceDetailsForm.vue";
+import InvoiceTable from "@/components/InvoiceTable.vue";
 
-  export default {
-    name: "Home",
-    components: {
-      Header,
-      LoanDetailsForm,
-      LoanCalculations
-    }
-  };
+export default {
+  name: "Home",
+  components: {
+    Header,
+    InvoiceDetailsForm,
+    InvoiceTable,
+  },
+};
 </script>
 
 <style scoped>
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
-  h1 {
-    color: #212121;
-  }
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  color: #212121;
+}
 </style>

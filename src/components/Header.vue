@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="container">
-            <h1>Loan Payment Calculator</h1>
+            <h1>Calaxy Invoice Generator</h1>
         </div>
     </header>
 </template>
